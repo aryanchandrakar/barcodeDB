@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/scan">
+
+
+    <Button
+        android:id="@+id/updateit"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button4"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="update it?😮"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="347dp"
+        android:layout_height="455dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/chivo"
+        android:hint="RESULT"
+        android:textAlignment="center"
+        android:textColor="#050000"
+        android:textColorHint="#B9474646"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/sTatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/scanner"
+        android:layout_width="166dp"
+        android:layout_height="42dp"
+        android:alpha="1"
+        android:background="@drawable/button3"
+        android:fontFamily="@font/noto_sans"
+        android:onClick="ScanButton"
+        android:text="@string/scan"
+        android:textColor="#E6DDDDDD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <EditText
+        android:id="@+id/sTatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Status?"
+        android:inputType="textPersonName"
+        android:textColor="#DF050404"
+        android:textColorHint="#92575757"
+        app:layout_constraintBottom_toTopOf="@+id/updateit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
